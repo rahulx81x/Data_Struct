@@ -26,14 +26,27 @@
 # stack1.pop()
 # stack1.out()
 
-from queue import *
-Q1 =Queue()
-Q1.push(10)
-Q1.push(20)
-Q1.push(31)
-Q1.push(40)
-Q1.push(49)
-Q1.out()
-Q1.pop()
-Q1.pop()
-Q1.out()
+# from queue import *
+# Q1 =Queue()
+# Q1.push(10)
+# Q1.push(20)
+# Q1.push(31)
+# Q1.push(40)
+# Q1.push(49)
+# Q1.out()
+# Q1.pop()
+# Q1.pop()
+# Q1.out()
+
+# from Tree import *
+# Phones = TreeNode("Phones")
+# Smart = TreeNode("SmartPhone")
+# Touch = TreeNode("TouchPhone")
+# Flip = TreeNode("FlipPhone")
+# Feature = TreeNode("Feature Phone")
+# Phones.add_child(Smart)
+# Phones.add_child(Touch)
+# Phones.add_child(Flip)
+# Phones.add_child(Feature)
+# Phones.create_from()
+
