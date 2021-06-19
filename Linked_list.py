@@ -21,6 +21,10 @@ class LinkedList:
         self.start = node
 
     def at_end(self, data):
+
+        if self.start is None:
+            self.at_beginning(data)
+            return
         node = Node(data, None)
         i = self.start
         while i.next is not None:
@@ -35,7 +39,9 @@ class LinkedList:
             i = i.next
         print(op)
 
-    def at(self, data, pos):
+    def add_at(self, data, pos):
+        if self.start is None:
+            self.at_beginning(data)
         node = Node(data)
         count = 0
         i = self.start
@@ -52,3 +58,20 @@ class LinkedList:
             count += 1
             i = i.next
         i.next = i.next.next
+
+    def size(self):
+        count = 0
+        i = self.start
+        while i.next is not None:
+            count += 1
+            i = i.next
+        return count
+
+    def remove_at_end(self):
+        count = 0
+        i = self.start
+        while count != self.size() - 1:
+            count += 1
+            i = i.next
+        i.next = None
+
