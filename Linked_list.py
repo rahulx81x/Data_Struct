@@ -14,7 +14,7 @@ class LinkedList:
         while i.next is not None:
             count += 1
             i = i.next
-        return count+1
+        return count+1 # +1 for no. of nodes 
 
     def at_beginning(self, data):
         node = Node(data, self.start)
@@ -59,18 +59,11 @@ class LinkedList:
             i = i.next
         i.next = i.next.next
 
-    def size(self):
-        count = 0
-        i = self.start
-        while i.next is not None:
-            count += 1
-            i = i.next
-        return count
-
+    
     def remove_at_end(self):
         count = 0
         i = self.start
-        while count != self.size() - 1:
+        while count != self.length() - 2: # -1 because of array starting at 0 and -1 because we need to end at the second last
             count += 1
             i = i.next
         i.next = None
