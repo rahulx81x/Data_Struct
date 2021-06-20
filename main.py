@@ -7,13 +7,13 @@
 # phones.at_end('samsung')
 # phones.at_end('vivo')
 # phones.at_beginning('apple')
-#
+# phones.op()
 # phones.add_at('1+', 2)
-# phones.remove_at(3)
+# phones.remove_at_end()
 # phones.op()
 # print(phones.length())
 #
-#
+# #
 # from stack import *
 # stack1 = Stack()
 # stack1.push(41)
@@ -50,3 +50,11 @@
 # Phones.add_child(Feature)
 # Phones.create_from()
 
+# from btree import *
+# btree = BTree('bbk')
+# btree.add_node('oppo')
+# btree.add_node('f1')
+# btree.add_node('vivo')
+# btree.add_node('v5')
+# btree.add_node('1+')
+# print(btree.out_post())
