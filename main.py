@@ -58,3 +58,21 @@
 # btree.add_node('v5')
 # btree.add_node('1+')
 # print(btree.out_post())
+
+# from graph import *
+# routes = [
+#         ("Mumbai", "Pune"),
+#         ("Mumbai", "Surat"),
+#         ("Surat", "Bengaluru"),
+#         ("Pune", "Hyderabad"),
+#         ("Pune", "Mysuru"),
+#         ("Hyderabad", "Bengaluru"),
+#         ("Hyderabad", "Chennai"),
+#         ("Mysuru", "Bengaluru"),
+#         ("Chennai", "Bengaluru")
+#     ]
+#
+# route_graph = Graph(routes)
+# route_graph.give()
+# final_route = route_graph.give_route("Mumbai", "Chennai")
+# print(final_route)
