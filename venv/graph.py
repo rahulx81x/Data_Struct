@@ -23,25 +23,8 @@ class Graph:
                 new = self.give_route(via, end, route)
                 for index in new:
                     froutes.append(index)
-        # print(froutes)
+
         return froutes
 
-    # def give_route(self, start, end, path=[]):
-    #     path = path + [start]
-    #
-    #     if start == end:
-    #         return [path]
-    #
-    #     if start not in self.dict:
-    #         return []
-    #
-    #     paths = []
-    #     for node in self.dict[start]:
-    #         if node not in path:
-    #             new_paths = self.give_route(node, end, path)
-    #             for p in new_paths:
-    #                 paths.append(p)
-    #     for i in range(len(paths)):
-    #         print(paths[i])
-    #     return paths
+
 
