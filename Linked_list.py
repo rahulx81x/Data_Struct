@@ -7,6 +7,7 @@ class Node:
 class LinkedList:
     def __init__(self):
         self.start = None
+        self.end = None
 
     def length(self):
         count = 0
@@ -14,11 +15,14 @@ class LinkedList:
         while i.next is not None:
             count += 1
             i = i.next
-        return count+1 # +1 for no. of nodes 
+        return count+1
+        # +1 for no. of nodes
 
     def at_beginning(self, data):
         node = Node(data, self.start)
         self.start = node
+        if node.next is None:
+            self.end = node
 
     def at_end(self, data):
 
@@ -26,10 +30,8 @@ class LinkedList:
             self.at_beginning(data)
             return
         node = Node(data, None)
-        i = self.start
-        while i.next is not None:
-            i = i.next
-        i.next = node
+        self.end.next = node
+        self.end = node
 
     def op(self):
         op = ''
@@ -58,13 +60,13 @@ class LinkedList:
             count += 1
             i = i.next
         i.next = i.next.next
-
     
     def remove_at_end(self):
         count = 0
         i = self.start
-        while count != self.length() - 2: # -1 because of array starting at 0 and -1 because we need to end at the second last
+        while count != self.length() - 2:
+            # -1 because of array starting at 0 and
+            # -1 because we need to end at the second last
             count += 1
             i = i.next
-        i.next = None
-
+        i.next = self.start

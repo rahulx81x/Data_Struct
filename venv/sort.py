@@ -70,3 +70,18 @@ def selection(el):
         if i != min:
             el[i],el[min] = el[min], el[i]
     return el
+
+# Quicksort #####################3
+def quick(el):
+    if len(el) <= 1:
+        return el
+    less_than_pivot=[]
+    greater_than_pivot=[]
+    pivot = el[0]
+    for element in el[1:]:
+        if element <= pivot:
+            less_than_pivot.append(element)
+        else:
+            greater_than_pivot.append(element)
+    return quick(less_than_pivot) + [pivot] + quick(greater_than_pivot)
+

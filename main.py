@@ -76,18 +76,18 @@
 # route_graph.give()
 # final_route = route_graph.give_route("Mumbai", "Bengaluru")
 # print(final_route)
-
-from hash import *
-table = HashTable()
-table.add('rahul', 8)
-table.add('rohan', 25)
-table.add('akash', 13)
-table.add('shivam', 14)
-table.add('aryan', 24)
-
-print(table.get('rahul'))
-table.delete('akash')
-table.whole()
+#
+# from hash import *
+# table = HashTable()
+# table.add('rahul', 8)
+# table.add('rohan', 25)
+# table.add('akash', 13)
+# table.add('shivam', 14)
+# table.add('aryan', 24)
+#
+# print(table.get('rahul'))
+# table.delete('akash')
+# table.whole()
 
 # SORTING ########################################################################
 import sort
@@ -99,13 +99,16 @@ elements = [
     [9],
     [2, 6, 35, 8, 36, 99, 59, 21, 43]
 ]
-# for element in elements:
-#     sort.selection(element)
-#     print(element)
-#     sort.bubble(element)
-#     print(element)
-#     sort.insertion(element)
-#     print(element)
-#     sort.merge(element)
-#     print(element)
+#for element in elements:
+    # sort.selection(element)
+    # print(element)
+    # sort.bubble(element)
+    # print(element)
+    # sort.insertion(element)
+    # print(element)
+    # sort.merge(element)
+    # print(element)
+    #print(sort.quick(element))
+
+
 
