@@ -7,9 +7,7 @@ def bubble(el):
         flag = 0
         for i in range(size - 1 -j):
                 if el[i] > el[i+1]:
-                    temp = el[i]
-                    el[i] = el[i+1]
-                    el[i+1] =  temp
+                    el[i], el[i+1] = el[i+1], el[i]
                     flag = 1
         if flag != 1:
             break
@@ -61,8 +59,14 @@ def insertion(el):
         el[j+1] = pointer
     return el
 
+#selection ##################################################
 
-
-
-
-
+def selection(el):
+    for i in range(len(el)-1):
+        min = i
+        for j in range(i+1,len(el)):
+            if el[j] < el[min]:
+                min = j
+        if i != min:
+            el[i],el[min] = el[min], el[i]
+    return el
